@@ -1,0 +1,30 @@
+CREATE DATABASE restaurante;
+USE restaurante;
+
+CREATE TABLE pessoa (
+   cod INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+   nome VARCHAR(100),
+   telefone VARCHAR(20),
+   cpf VARCHAR(20),
+   login VARCHAR(100),
+   senha VARCHAR(50),
+   tipo VARCHAR(50)
+);
+
+CREATE TABLE produto (
+   cod INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+   nome VARCHAR(100),
+   valor DOUBLE,
+   categoria VARCHAR(20),
+   quantidade INT
+);
+
+CREATE TABLE conta (
+   cod INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+   garcom VARCHAR(100),
+   produtos VARCHAR(100),
+   dataAbertura VARCHAR(20),
+   horaAbertura VARCHAR(20),
+   valorTotal DOUBLE
+);
+
